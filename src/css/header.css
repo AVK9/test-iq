@@ -1,5 +1,8 @@
 .header {
-  padding: 20px 0;
+  padding: 17px 15px;
+  height: 46px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #181818;
 }
 
 .nav-list {

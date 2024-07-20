@@ -5,7 +5,6 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
 
 :root {
@@ -16,6 +15,7 @@
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
+  background-image: url('../img/bgr.png');
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
