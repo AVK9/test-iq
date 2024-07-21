@@ -49,7 +49,7 @@ const questions = [
       '#fdff19',
       '#0000a9',
     ],
-    correct: '2',
+    shablon: '2',
   },
   {
     question: 'Какой из городов лишний?',
