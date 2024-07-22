@@ -21,6 +21,7 @@
 #answers-block {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
@@ -95,4 +96,27 @@ input[type='radio'] {
   text-transform: uppercase;
   text-align: center;
   color: #8e8e8e;
+}
+
+.question-image {
+  width: 228px;
+  height: 207px;
+}
+
+.container-btn-ans {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.container-color-ans {
+  width: 367px;
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  gap: 21px 24px;
+}
+.answer-button {
+  height: 42px;
+  width: 42px;
 }
