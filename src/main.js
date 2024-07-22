@@ -58,7 +58,7 @@ const questions = [
   },
   {
     question: 'Выберите правильную фигуру из четырёх пронумерованных.',
-    picture: './img/image1.jpg',
+    picture: '/img/image1.jpg',
     answers: ['1', '2', '3', '4 '],
     shablon: '3',
   },
@@ -74,7 +74,7 @@ const questions = [
   {
     question:
       'Какое определение, по-Вашему, больше подходит к этому геометрическому изображению:',
-    picture: './img/image2.jpg',
+    picture: '/img/image2.jpg',
     answers: [
       'Оно остроконечное',
       'Оно устойчиво',
@@ -84,7 +84,7 @@ const questions = [
   },
   {
     question: 'Вставьте подходящее число',
-    picture: './img/image3.jpg',
+    picture: '/img/image3.jpg',
     answers: ['34', '36', '53', '44', '66', '42'],
     shablon: '3',
   },
