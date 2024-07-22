@@ -58,7 +58,7 @@ const questions = [
   },
   {
     question: 'Выберите правильную фигуру из четырёх пронумерованных.',
-    picture: '/test-iq/src/public/image.png',
+    picture: '/image.png',
     answers: ['1', '2', '3', '4 '],
     shablon: '3',
   },
@@ -74,7 +74,7 @@ const questions = [
   {
     question:
       'Какое определение, по-Вашему, больше подходит к этому геометрическому изображению:',
-    picture: 'https://avk9.github.io/test-iq/public/image-.png',
+    picture: '/image-.png',
     answers: [
       'Оно остроконечное',
       'Оно устойчиво',
@@ -84,7 +84,7 @@ const questions = [
   },
   {
     question: 'Вставьте подходящее число',
-    picture: 'https://avk9.github.io/test-iq/public/image--.png',
+    picture: '/image--.png',
     answers: ['34', '36', '53', '44', '66', '42'],
     shablon: '3',
   },
