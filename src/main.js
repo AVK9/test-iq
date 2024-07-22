@@ -58,7 +58,7 @@ const questions = [
   },
   {
     question: 'Выберите правильную фигуру из четырёх пронумерованных.',
-    picture: './public/image.png',
+    picture: './img/iq.png',
     answers: ['1', '2', '3', '4 '],
     shablon: '3',
   },
