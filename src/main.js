@@ -58,7 +58,7 @@ const questions = [
   },
   {
     question: 'Выберите правильную фигуру из четырёх пронумерованных.',
-    picture: 'https://avk9.github.io/test-iq/public/image.png',
+    picture: '/test-iq/src/public/image.png',
     answers: ['1', '2', '3', '4 '],
     shablon: '3',
   },
