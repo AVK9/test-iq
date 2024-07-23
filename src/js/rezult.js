@@ -19,7 +19,7 @@ export const rezult = `<div class="rezult-container">
   </p>
   <button class="btn-coll">
     <img
-      src="alexk.site/call.svg"
+      src="https://alexk.site/call.svg"
       alt="Call"
       width="29"
       height="29"
