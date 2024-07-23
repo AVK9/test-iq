@@ -1,3 +1,5 @@
+import call from '../img/call.svg';
+
 export const rezult = `<div class="rezult-container">
   <h2 class="rezult-name">Ваш результат рассчитан:</h2>
   <p class="rezult-text">
@@ -19,7 +21,7 @@ export const rezult = `<div class="rezult-container">
   </p>
   <button class="btn-coll">
     <img
-      src="https://alexk.site/call.svg"
+      src=${call}
       alt="Call"
       width="29"
       height="29"
