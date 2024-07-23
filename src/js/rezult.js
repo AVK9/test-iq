@@ -1,4 +1,5 @@
 import call from '../img/call.svg';
+import { dataApi } from './api';
 
 export const rezult = `<div class="rezult-container">
   <h2 class="rezult-name">Ваш результат рассчитан:</h2>
@@ -19,7 +20,7 @@ export const rezult = `<div class="rezult-container">
     Звоните скорее, запись доступна всего
     <span class="timer-text" id="timer"></span> минут
   </p>
-  <button class="btn-coll">
+  <button id="btn-coll">
     <img
       src=${call}
       alt="Call"
@@ -29,6 +30,7 @@ export const rezult = `<div class="rezult-container">
     />
     <span class="btn-text">Позвонить и прослушать результат</span>
   </button>
+  <div id="person-info"></div>
 </div>`;
 
 export function startTimer(duration, display) {
@@ -50,4 +52,30 @@ export function startTimer(duration, display) {
       display.textContent = '00:00';
     }
   }, 1000);
+}
+
+export function onShowPerson() {
+  dataApi()
+    .then(resp => {
+      personData(resp);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+}
+
+function personData(resp) {
+  const personInfo = document.getElementById('person-info');
+  personInfo.innerHTML = `
+  <ul>
+    <li>Имя: <span class="person-info">${resp.name}</span></li>
+    <li>Год рождения: <span class="person-info">${resp.birth_year}</span></li>
+    <li>Пол: <span class="person-info">${resp.gender}</span></li>
+    <li>Рост: <span class="person-info">${resp.height}</span></li>
+    <li>Вес: <span class="person-info">${resp.mass}</span></li>
+    <li>Цвет глаз: <span class="person-info">${resp.hair_color}</span></li>
+    <li>Цвет волос:<span class="person-info"> ${resp.eye_color}</span></li>
+    <li>Цвет кожи: <span class="person-info">${resp.skin_color}</span></li>
+  </ul>
+ `;
 }

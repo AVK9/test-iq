@@ -87,7 +87,7 @@
   color: #3bde7c;
 }
 
-.btn-coll {
+#btn-coll {
   margin-top: 12px;
   border: none;
   outline: none;
@@ -106,6 +106,25 @@
   font-weight: 900;
   font-size: 15px;
   letter-spacing: 0.05em;
+  color: #fff;
+  text-align: left;
+}
+#person-info {
+  margin-top: 10px;
+  font-weight: 600;
+  font-family: var(--font3);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: #3bde7c;
+  text-align: left;
+}
+
+.person-info {
+  margin-top: 10px;
+  font-weight: 600;
+  font-family: var(--font3);
+  font-size: 12px;
+  letter-spacing: 0.5em;
   color: #fff;
   text-align: left;
 }

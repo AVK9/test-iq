@@ -1,7 +1,7 @@
 import { questions, dataFooter } from './js/data';
 import loaderHTML from './js/loader';
 import { updateProgressBar } from './js/progress-bar';
-import { rezult, startTimer } from './js/rezult';
+import { onShowPerson, rezult, startTimer } from './js/rezult';
 
 export let currentQuestionIndex = 0;
 let score = 0;
@@ -211,6 +211,10 @@ function showLoader() {
     headerName.innerHTML = 'Готово!';
     const footerContent = document.getElementById('footer-content');
     footerContent.innerHTML = dataFooter;
+
+    ///////////////////
+    const btnColl = document.getElementById('btn-coll');
+    btnColl.addEventListener('click', onShowPerson);
   }, 5000);
 }
 
@@ -227,7 +231,7 @@ function selectAnswer() {
     if (currentQuestionIndex < questions.length) {
       loadQuestion();
     } else {
-      showLoader(); // Показуємо завантажувач після останнього запитання
+      showLoader();
     }
   }
 }
