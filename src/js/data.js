@@ -1,3 +1,7 @@
+import img1 from '../img/image.png';
+import img2 from '../img/image-.png';
+import img3 from '../img/image--.png';
+
 const questions = [
   {
     question: 'Ваш пол?',
@@ -58,7 +62,7 @@ const questions = [
   },
   {
     question: 'Выберите правильную фигуру из четырёх пронумерованных.',
-    picture: 'https://alexk.site/image.png',
+    picture: `${img1}`,
     answers: ['1', '2', '3', '4 '],
     shablon: '3',
   },
@@ -74,7 +78,7 @@ const questions = [
   {
     question:
       'Какое определение, по-Вашему, больше подходит к этому геометрическому изображению:',
-    picture: 'https://alexk.site/image-.png',
+    picture: `${img2}`,
     answers: [
       'Оно остроконечное',
       'Оно устойчиво',
@@ -84,7 +88,7 @@ const questions = [
   },
   {
     question: 'Вставьте подходящее число',
-    picture: 'https://alexk.site/image--.png',
+    picture: `${img3}`,
     answers: ['34', '36', '53', '44', '66', '42'],
     shablon: '3',
   },
