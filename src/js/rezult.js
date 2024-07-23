@@ -1,4 +1,4 @@
-<div class="rezult-container">
+export const rezult = `<div class="rezult-container">
   <h2 class="rezult-name">Ваш результат рассчитан:</h2>
   <p class="rezult-text">
     <span class="rezult-text-aktsent"> Вы относитесь к 3%</span> респондентов,
@@ -15,7 +15,7 @@
   </div>
   <p class="call-text">
     Звоните скорее, запись доступна всего
-    <span class="timer-text" id="timer">10:00</span> минут
+    <span class="timer-text" id="timer"></span> минут
   </p>
   <button class="btn-coll">
     <img
@@ -27,4 +27,25 @@
     />
     <span class="btn-text">Позвонить и прослушать результат</span>
   </button>
-</div>
+</div>`;
+
+export function startTimer(duration, display) {
+  let timer = duration,
+    minutes,
+    seconds;
+
+  const interval = setInterval(() => {
+    minutes = Math.floor(timer / 60);
+    seconds = timer % 60;
+
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    display.textContent = minutes + ':' + seconds;
+
+    if (--timer < 0) {
+      clearInterval(interval);
+      display.textContent = '00:00';
+    }
+  }, 1000);
+}

@@ -1,6 +1,6 @@
-import './js/timer';
 import questions from './js/data';
 import loaderHTML from './js/loader';
+import { rezult, startTimer } from './js/rezult';
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -192,12 +192,17 @@ function displayResult() {
 }
 
 function showLoader() {
-  const answersBlock = document.getElementById('answers-block');
-  answersBlock.innerHTML = ''; // Очищаємо попередні відповіді
+  const rezultBlock = document.getElementById('test-container');
+  rezultBlock.innerHTML = '';
+  rezultBlock.innerHTML = loaderHTML;
 
-  answersBlock.innerHTML = loaderHTML;
-
-  setTimeout(displayResult, 10000); // Показуємо результат через 10 секунд
+  setTimeout(() => {
+    rezultBlock.innerHTML = '';
+    rezultBlock.innerHTML = rezult;
+    const display = document.getElementById('timer');
+    const tenMinutes = 10 * 60;
+    startTimer(tenMinutes, display);
+  }, 5000);
 }
 
 function selectAnswer() {
