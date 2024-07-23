@@ -89,4 +89,4 @@ const questions = [
     shablon: '3',
   },
 ];
-https: export default questions;
+export default questions;
