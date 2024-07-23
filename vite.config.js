@@ -25,6 +25,11 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
     },
+    resolve: {
+      alias: {
+        '@': '/src',
+      },
+    },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
 });

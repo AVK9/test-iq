@@ -1,0 +1,111 @@
+.rezult-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rezult-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 107%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 18px;
+}
+.rezult-text {
+  margin-top: 13px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #fff;
+}
+.rezult-text-aktsent {
+  margin-top: 13px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #fff;
+}
+.rezult-lozung {
+  margin-top: 22px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3bde7c;
+}
+.table-box {
+  margin-top: 12px;
+  border-radius: 6px;
+  width: 256px;
+  height: 114px;
+  background: #1c2741;
+  padding: 15px 12px;
+}
+.table-text {
+  font-family: var(--font3);
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 175%;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.call-text {
+  margin-top: 18px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 273%;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #3bde7c;
+}
+.timer-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #3bde7c;
+}
+
+.btn-coll {
+  margin-top: 12px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 290px;
+  height: 92px;
+  background: #eb1b00;
+
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.btn-text {
+  font-family: var(--font3);
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: left;
+}
