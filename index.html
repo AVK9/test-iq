@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/test-iq/commonHelpers2.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-iq/assets/index-Cv8VDQkE.css">
+    <link rel="stylesheet" crossorigin href="/test-iq/assets/index-DvA3hmmY.css">
   </head>
   <body>
     <header class="header">
@@ -19,7 +19,7 @@
       <div class="burger"><span class="burger-mid"></span></div>
       <div class="name">
         <img src="/test-iq/assets/iq-CBAvcV2s.png" alt="IQ" width="48" />
-        <h1>Тест на определение IQ</h1>
+        <h1 id="header-name">Тест на определение IQ</h1>
       </div>
     </div>
   </nav>
@@ -29,27 +29,10 @@
     <!-- <div id="header-container"></div> -->
     <section>
       <!-- <div id="main-container"></div> -->
-      <!-- <div id="test-container"></div>
-  <h2 id="question-title">Ваш пол?</h2>
-  <div id="answers-block">
-    <label class="answer-label">
-      <input  type="radio" name="answer-label" value="Мужщина" />
-      <span class="radio-mark"></span>
-    <span class="answer-text">Мужщина</span>
-  </label>
-      <label class="answer-label">
-      <input  type="radio" name="answer-label"  value="Женщина" />
-      <span class="radio-mark"></span>
-    <span class="answer-text">Женщина</span>
-  </label>
+      <div id="test-container">
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progress-bar"></div>
   </div>
-
-<div class="btn-box">
-<button id="next-button" disabled>ДАЛЕЕ</button>
-</div>
-</div> -->
-
-<div id="test-container">
   <h2 id="question-title"></h2>
   <div id="answers-block"></div>
 
@@ -62,7 +45,7 @@
 
     <!-- <div id="footer-container"></div> -->
     <footer class="footer">
-  <p class="footer-content">&copy; 2024 IQ Test</p>
+  <p id="footer-content">&copy; 2024 IQ Test</p>
 </footer>
 
 
