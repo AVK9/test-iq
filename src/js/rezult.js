@@ -33,12 +33,14 @@ export const rezult = `<div class="rezult-container">
   <div id="person-info"></div>
 </div>`;
 
+let interval;
+
 export function startTimer(duration, display) {
   let timer = duration,
     minutes,
     seconds;
 
-  const interval = setInterval(() => {
+  interval = setInterval(() => {
     minutes = Math.floor(timer / 60);
     seconds = timer % 60;
 
@@ -51,7 +53,14 @@ export function startTimer(duration, display) {
       clearInterval(interval);
       display.textContent = '00:00';
     }
+    const btnColl = document.getElementById('btn-coll');
+    btnColl.addEventListener('click', () => stopTimer(display));
   }, 1000);
+}
+
+function stopTimer(display) {
+  clearInterval(interval);
+  display.textContent = '00:00';
 }
 
 export function onShowPerson() {
