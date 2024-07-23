@@ -5,10 +5,10 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./progress-bar.css');
 @import url('./header.css');
 @import url('./footer.css');
-/* @import url('./question.css'); */
-@import url('./test.css');
+@import url('./question.css');
 @import url('./loader.css');
 @import url('./rezult.css');
 
@@ -25,6 +25,5 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: stretch;
 }

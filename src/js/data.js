@@ -2,7 +2,7 @@ import img1 from '../img/image.png';
 import img2 from '../img/image-.png';
 import img3 from '../img/image--.png';
 
-const questions = [
+export const questions = [
   {
     question: 'Ваш пол?',
     answers: ['Мужщина', 'Женщина'],
@@ -14,12 +14,12 @@ const questions = [
     shablon: '1',
   },
   {
-    question: 'Виберите лишнее',
+    question: 'Виберите лишнее:',
     answers: ['Дом', 'Шалаш', 'Бунгало', 'Скамейка', 'Хижина'],
     shablon: '1',
   },
   {
-    question: 'Продолжите числовой ряд: 18 20 24 32',
+    question: `Продолжите числовой ряд: <br /> 18 20 24 32`,
     answers: ['62', '48', '74', '57', '60', '77'],
     shablon: '1',
   },
@@ -93,4 +93,5 @@ const questions = [
     shablon: '3',
   },
 ];
-export default questions;
+
+export const dataFooter = `<div class="data-footer"> TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU <br/> DE DIVERTISMENT. PRIN FOLOSIREA LUI <br/> DECLARATI CA AVETI 18 ANI IMPLINITI.  </div>`;

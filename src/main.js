@@ -1,8 +1,9 @@
-import questions from './js/data';
+import { questions, dataFooter } from './js/data';
 import loaderHTML from './js/loader';
+import { updateProgressBar } from './js/progress-bar';
 import { rezult, startTimer } from './js/rezult';
 
-let currentQuestionIndex = 0;
+export let currentQuestionIndex = 0;
 let score = 0;
 
 function loadQuestion() {
@@ -10,11 +11,13 @@ function loadQuestion() {
   const questionTitle = document.getElementById('question-title');
   const answersBlock = document.getElementById('answers-block');
 
-  questionTitle.textContent = question.question;
+  questionTitle.innerHTML = question.question;
   answersBlock.innerHTML = ''; // Очищаємо попередні відповіді
+  updateProgressBar(currentQuestionIndex);
 
   if (question.shablon === '1') {
     // Шаблон 1: звичайні радіо-кнопки
+
     question.answers.forEach((answer, index) => {
       const label = document.createElement('label');
       label.className = 'answer-label';
@@ -180,16 +183,18 @@ function loadQuestion() {
       });
     });
   }
+  //   updateProgressBar();
+  //   console.log('mainBar');
 }
 
-function displayResult() {
-  const questionContainer = document.getElementById('question-container');
-  const resultContainer = document.getElementById('result-container');
-  resultContainer.style.display = 'block';
-  document.getElementById(
-    'result'
-  ).textContent = `You scored ${score} out of ${questions.length}`;
-}
+// function displayResult() {
+//   const questionContainer = document.getElementById('question-container');
+//   const resultContainer = document.getElementById('result-container');
+//   resultContainer.style.display = 'block';
+//   document.getElementById(
+//     'result'
+//   ).textContent = `You scored ${score} out of ${questions.length}`;
+// }
 
 function showLoader() {
   const rezultBlock = document.getElementById('test-container');
@@ -202,6 +207,10 @@ function showLoader() {
     const display = document.getElementById('timer');
     const tenMinutes = 10 * 60;
     startTimer(tenMinutes, display);
+    const headerName = document.getElementById('header-name');
+    headerName.innerHTML = 'Готово!';
+    const footerContent = document.getElementById('footer-content');
+    footerContent.innerHTML = dataFooter;
   }, 5000);
 }
 
@@ -209,7 +218,7 @@ function selectAnswer() {
   const selectedAnswer = document.querySelector('input[name="answer"]:checked');
   if (selectedAnswer) {
     if (
-      questions[currentQuestionIndex].correctAnswer ==
+      questions[currentQuestionIndex].correctAnswer ===
       parseInt(selectedAnswer.value)
     ) {
       score++;

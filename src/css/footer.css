@@ -1,4 +1,4 @@
-.footer-content {
+#footer-content {
   font-family: var(--font3);
   font-weight: 400;
   font-size: 10px;
@@ -6,6 +6,36 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
-
+}
+.data-footer {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 129%;
+  letter-spacing: 0.43em;
+  text-transform: uppercase;
   text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  height: 20px;
+  position: relative;
+  overflow-y: scroll;
+  padding-right: 15px;
+}
+
+.data-footer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.data-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  /* background: rgb(0, 0, 0); */
+  background-image: url('../img/bgr.png');
+  z-index: 1;
 }
