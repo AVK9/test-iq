@@ -1,7 +1,7 @@
 import call from '../img/call.svg';
 import { dataApi } from './api';
 
-export const rezult = `<div class="rezult-container">
+export const rezult = `<div class="rezult-container container">
   <h2 class="rezult-name">Ваш результат рассчитан:</h2>
   <p class="rezult-text">
     <span class="rezult-text-aktsent"> Вы относитесь к 3%</span> респондентов,

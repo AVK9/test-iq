@@ -2,10 +2,9 @@
   position: fixed;
   inset: 0px;
   padding: 15px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-color: #181818;
   opacity: 0;
-  height: 100vh;
+  height: 100%;
   transition: opacity 0.8s ease-in-out, height 0.8s ease-in-out;
   overflow: hidden;
   display: none;
@@ -16,6 +15,10 @@
   opacity: 1;
   z-index: 1000;
   transition: opacity 0.8s ease-in-out, height 0.8s ease-in-out;
+}
+.popup {
+  height: 100%;
+  width: 100%;
 }
 
 #btn-popup-close {

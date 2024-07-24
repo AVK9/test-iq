@@ -6,7 +6,7 @@ import { questionShablon } from './question';
 import { loadQuestion, selectAnswer } from './test';
 
 export const more = `
-<div class="more-container">
+<div class="more-container container">
   <div class="more-blue-box">
   <div class="more-blue-box-top"></div>
     <div class="more-blue-text">

@@ -6,6 +6,9 @@
   display: flex;
   align-items: center;
 }
+.nav {
+  width: 100%;
+}
 
 .header-content {
   display: flex;
@@ -13,7 +16,6 @@
 }
 
 .burger {
-  margin: 0px 15px;
   width: 24px;
   height: 16px;
   position: relative;
