@@ -11,12 +11,12 @@
     />
     <script type="module" crossorigin src="/test-iq/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/test-iq/assets/vendor-WsyFh4ar.js">
-    <link rel="stylesheet" crossorigin href="/test-iq/assets/index-CLFJswRV.css">
+    <link rel="stylesheet" crossorigin href="/test-iq/assets/index-BhrzHUs_.css">
   </head>
   <body>
     <div id="wrapper">
       <header class="header">
-  <nav class="nav">
+  <nav class="nav container">
     <div class="header-content">
       <div id="btn-burger" class="burger"><span class="burger-mid"></span></div>
       <div id="header-name"></div>
@@ -24,23 +24,27 @@
   </nav>
 </header>
 <div id="popup-container" class="">
-  <div id="btn-popup-close">
-    <span class="btn-popup-close-plus"></span>
-    <span class="btn-popup-close-minus"></span>
+  <div class="popup container">
+    <div id="btn-popup-close">
+      <span class="btn-popup-close-plus"></span>
+      <span class="btn-popup-close-minus"></span>
+    </div>
+    <nav class="nav-popup">
+      <ul class="popup-list">
+        <li id="popup-home" class="popup-list-item">Главная</li>
+        <li id="popup-info" class="popup-list-item">Информация о тесте</li>
+        <li id="popup-start-test" class="popup-list-item">Пройти тест</li>
+      </ul>
+    </nav>
   </div>
-  <nav class="nav-popup">
-    <ul class="popup-list">
-      <li id="popup-home" class="popup-list-item">Главная</li>
-      <li id="popup-info" class="popup-list-item">Информация о тесте</li>
-      <li id="popup-start-test" class="popup-list-item">Пройти тест</li>
-    </ul>
-  </nav>
 </div>
 
-      <section>
-        <div id="home-container"></div>
-      </section>
-      <footer class="footer">
+      <main>
+        <section>
+          <div id="home-container"></div>
+        </section>
+      </main>
+      <footer class="footer container">
   <p id="footer-content"></p>
 </footer>
 
