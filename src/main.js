@@ -1,34 +1,16 @@
-import { loadQuestion, selectAnswer } from './js/test';
-import { homePage } from './js/home';
-import { questionShablon } from './js/question';
-import { more } from './js/more';
 import './js/header';
+import { homePage } from './js/home';
+import { more } from './js/more';
+import { questionShablon } from './js/question';
+import { loadQuestion, selectAnswer } from './js/test';
 
 const home = document.getElementById('home-container');
-
+home.innerHTML = '';
 home.innerHTML = homePage;
+const homeBtnTest = document.getElementById('home-btn-test');
+homeBtnTest?.addEventListener('click', onStartTest);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const moreBtn = document.getElementById('home-btn-more');
-  if (moreBtn) {
-    moreBtn.addEventListener('click', addMore);
-  }
-});
-
-function addMore() {
-  home.insertAdjacentHTML('beforeend', more);
-  const delMoreBtn = document.getElementById('del-home-btn-more');
-  delMoreBtn.innerHTML = '';
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const homeBtnTest = document.getElementById('home-btn-test');
-  if (homeBtnTest) {
-    homeBtnTest.addEventListener('click', onStartTest);
-  }
-});
-
-function onStartTest() {
+export function onStartTest() {
   home.innerHTML = '';
   home.innerHTML = questionShablon;
 
@@ -37,4 +19,19 @@ function onStartTest() {
   document
     .getElementById('next-button')
     .addEventListener('click', selectAnswer);
+}
+
+const moreBtn = document.getElementById('home-btn-more');
+
+moreBtn?.addEventListener('click', getInfo);
+
+export function getInfo() {
+  home.innerHTML = '';
+  home.innerHTML = more;
+  const homeBtnTestMore = window.document.getElementById('home-btn-test-more');
+  const homeBtnTestBlack = window.document.getElementById(
+    'home-btn-test-black'
+  );
+  homeBtnTestMore?.addEventListener('click', onStartTest);
+  homeBtnTestBlack?.addEventListener('click', onStartTest);
 }

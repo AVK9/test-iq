@@ -2,8 +2,6 @@ import picture from '../img/iq.png';
 import coyotDown from '../img/coyot-down.svg';
 import coyotTop from '../img/coyot-top.svg';
 import photo from '../img/325-01.png';
-import { questionShablon } from './question';
-import { loadQuestion, selectAnswer } from './test';
 
 export const more = `
 <div class="more-container container">
@@ -49,7 +47,7 @@ export const more = `
       width="238px"
       height="180px"
     />
-    <button id="home-btn-test-more" class="home-btn-test-more btn-st-tes" type="button">
+    <button id="home-btn-test-more" type="button">
       Пройти тест
     </button>
   </div>
@@ -73,31 +71,10 @@ export const more = `
         <div class="more-moon-l"></div>
         <div class="more-moon-r"></div>
     </div>
-    <button id="home-btn-test-black" type="button" class="home-btn-test-black btn-st-tes">
+    <button id="home-btn-test-black" type="button">
       Пройти тест
     </button>
   </div>
 
 </div>
 `;
-// const home = document.getElementById('home-container');
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const homeBtnTestMore = document.getElementById('home-btn-test-more');
-//   if (homeBtnTestMore) {
-//     homeBtnTestMore.addEventListener('click', onStartTest);
-//     console.log('sdfsdfsdfdsfsdf2222');
-//   }
-// });
-// console.log('sdfsdfsdfdsfsdf');
-// function onStartTest() {
-//   home.innerHTML = '';
-//   home.innerHTML = questionShablon;
-
-//   loadQuestion();
-
-//   document
-//     .getElementById('next-button')
-//     .addEventListener('click', selectAnswer);
-// }
-//-------------------

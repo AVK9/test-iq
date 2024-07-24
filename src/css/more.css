@@ -109,7 +109,7 @@
 .more-table-text .more-table-text-bold {
   font-weight: 700;
 }
-.home-btn-test-black {
+#home-btn-test-black {
   font-family: var(--third-family);
   font-weight: 700;
   font-size: 14px;
@@ -124,7 +124,9 @@
   height: 44px;
 
   background-color: transparent;
+  margin-bottom: 40px;
 }
+
 #home-btn-test-more {
   font-family: var(--third-family);
   font-weight: 700;
@@ -145,8 +147,10 @@
     rgb(255, 199, 0) 100%
   );
   transition: all 0.3s;
+  margin-bottom: 40px;
 }
-#home-btn-test-more:hover {
+#home-btn-test-more:hover,
+#home-btn-test-black:hover {
   scale: 1.05;
 }
 .more-moon-l {
