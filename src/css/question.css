@@ -1,5 +1,6 @@
 #test-container {
   margin: 0 auto;
+  width: 95%;
   min-height: 88vh;
   display: flex;
   flex-direction: column;

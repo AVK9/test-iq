@@ -1,4 +1,5 @@
-<!-- <div id="test-container">
+export const questionShablon = `
+<div id="test-container">
   <div class="progress-bar-container">
     <div class="progress-bar" id="progress-bar"></div>
   </div>
@@ -8,4 +9,5 @@
   <div class="btn-box">
     <button id="next-button" disabled>ДАЛЕЕ</button>
   </div>
-</div> -->
+</div>
+`;

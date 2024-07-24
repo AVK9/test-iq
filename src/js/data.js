@@ -94,4 +94,13 @@ export const questions = [
   },
 ];
 
+export const dataHeaderNameTest = `<div class="name">
+        <img src="./img/iq.png" alt="IQ" width="48" />
+        <h1 id="header-name">Тест на определение IQ</h1>
+      </div>`;
+export const dataHeaderNameResult = `<div class="name">
+        <img src="./img/iq.png" alt="IQ" width="48" />
+        <h1 id="header-name">Готово!</h1>
+      </div>`;
+export const dataFooterTest = `&copy; 2024 IQ Test`;
 export const dataFooter = `<div class="data-footer"> TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU <br/> DE DIVERTISMENT. PRIN FOLOSIREA LUI <br/> DECLARATI CA AVETI 18 ANI IMPLINITI.  </div>`;

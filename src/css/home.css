@@ -1,0 +1,98 @@
+#home-container {
+  width: 100%;
+  height: 100hv;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-pretext {
+  margin-top: 27px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+}
+.home-head {
+  margin-top: 27px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffc700;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.home-pfoto {
+  width: 178px;
+  height: 150px;
+  /* background: url("path_to_image"); */
+}
+#home-btn-test {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0d0c11;
+
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  width: 189px;
+  height: 41px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(255, 199, 0) 0%,
+    rgb(255, 199, 0) 100%
+  );
+  transition: all 0.3s;
+}
+#home-btn-test:hover {
+  scale: 1.05;
+}
+.home-text-akc {
+  margin-top: 22px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 127%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #ffc700;
+}
+.home-text-akc .home-text {
+  color: #fff;
+}
+.home-btn-top {
+  margin-top: 11px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.home-btn-top:hover {
+  scale: 1.05;
+}
+
+#home-btn-more {
+  cursor: pointer;
+  margin-top: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s;
+}
+.home-btn-more:hover {
+  scale: 1.05;
+}

@@ -5,6 +5,8 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./home.css');
+@import url('./more.css');
 @import url('./progress-bar.css');
 @import url('./header.css');
 @import url('./footer.css');
