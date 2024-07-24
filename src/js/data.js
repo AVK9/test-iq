@@ -1,6 +1,7 @@
 import img1 from '../img/image.png';
 import img2 from '../img/image-.png';
 import img3 from '../img/image--.png';
+import img from '../img/iq.png';
 
 export const questions = [
   {
@@ -95,11 +96,11 @@ export const questions = [
 ];
 
 export const dataHeaderNameTest = `<div class="name">
-        <img src="./img/iq.png" alt="IQ" width="48" />
+        <img src=${img} alt="IQ" width="48" />
         <h1 id="header-name">Тест на определение IQ</h1>
       </div>`;
 export const dataHeaderNameResult = `<div class="name">
-        <img src="./img/iq.png" alt="IQ" width="48" />
+        <img src=${img} alt="IQ" width="48" />
         <h1 id="header-name">Готово!</h1>
       </div>`;
 export const dataFooterTest = `&copy; 2024 IQ Test`;

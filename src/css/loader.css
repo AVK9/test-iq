@@ -10,6 +10,7 @@
 }
 
 .loader-text {
+  margin-right: 22px;
   margin-top: 28px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -22,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   /* padding: 0px 22px; */
 }
 

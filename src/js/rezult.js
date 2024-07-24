@@ -29,7 +29,9 @@ export const rezult = `<div class="rezult-container">
       title="Call"
     />
     <span class="btn-text">Позвонить и прослушать результат</span>
-  </button>
+          <div class="rez-moon-l"></div>
+        <div class="rez-moon-r"></div>
+    </button>
   <div id="person-info"></div>
 </div>`;
 

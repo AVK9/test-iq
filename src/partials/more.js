@@ -70,11 +70,14 @@ export const more = `
         >
         от финансового до любовного.
       </p>
+        <div class="more-moon-l"></div>
+        <div class="more-moon-r"></div>
     </div>
     <button id="home-btn-test-black" type="button" class="home-btn-test-black btn-st-tes">
       Пройти тест
     </button>
   </div>
+
 </div>
 `;
 // const home = document.getElementById('home-container');

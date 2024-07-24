@@ -89,6 +89,7 @@
   color: #ffc700;
 }
 .more-table {
+  position: relative;
   margin: 24px 14px 14px 14px;
   border-radius: 20px;
   width: 303px;
@@ -147,4 +148,27 @@
 }
 #home-btn-test-more:hover {
   scale: 1.05;
+}
+.more-moon-l {
+  position: absolute;
+  bottom: -93px;
+  left: -63px;
+  width: 165px;
+  height: 165px;
+  background-image: url('../img/lightning-l.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.more-moon-r {
+  position: absolute;
+  rotate: 30deg;
+  top: -63px;
+  right: -63px;
+  width: 165px;
+  height: 165px;
+  background-image: url('../img/lightning-r.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

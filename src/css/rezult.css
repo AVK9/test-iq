@@ -88,6 +88,7 @@
 }
 
 #btn-coll {
+  position: relative;
   margin-top: 12px;
   border: none;
   outline: none;
@@ -127,4 +128,30 @@
   letter-spacing: 0.5em;
   color: #fff;
   text-align: left;
+}
+.rez-moon-l {
+  position: absolute;
+  bottom: -45px;
+  left: -75px;
+  rotate: -40deg;
+  width: 165px;
+  height: 165px;
+  background-image: url('../img/lightning.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+.rez-moon-r {
+  position: absolute;
+  rotate: -5deg;
+  bottom: -95px;
+  right: -127px;
+  width: 175px;
+  height: 175px;
+  background-image: url('../img/lightning.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
