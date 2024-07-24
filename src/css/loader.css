@@ -23,8 +23,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  /* padding: 0px 22px; */
+  /* width: 80%; */
+  padding: 0px 22px;
 }
 
 .loader {

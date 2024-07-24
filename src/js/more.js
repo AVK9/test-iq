@@ -2,8 +2,8 @@ import picture from '../img/iq.png';
 import coyotDown from '../img/coyot-down.svg';
 import coyotTop from '../img/coyot-top.svg';
 import photo from '../img/325-01.png';
-import { questionShablon } from '../js/question';
-import { loadQuestion, selectAnswer } from '../js/test';
+import { questionShablon } from './question';
+import { loadQuestion, selectAnswer } from './test';
 
 export const more = `
 <div class="more-container">

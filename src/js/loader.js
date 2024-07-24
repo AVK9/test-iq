@@ -7,7 +7,7 @@ const loaderHTML = `
 
   <p class="loader-text">
     Определение стиля
-    мышления. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+    мышления. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 </div>
 `;
 export default loaderHTML;

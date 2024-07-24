@@ -13,6 +13,7 @@
 @import url('./question.css');
 @import url('./loader.css');
 @import url('./rezult.css');
+@import url('./popup-menu.css');
 
 :root {
   --font-family: 'PT Serif', sans-serif;

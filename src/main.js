@@ -1,7 +1,8 @@
 import { loadQuestion, selectAnswer } from './js/test';
 import { homePage } from './js/home';
 import { questionShablon } from './js/question';
-import { more } from './partials/more';
+import { more } from './js/more';
+import './js/header';
 
 const home = document.getElementById('home-container');
 
