@@ -66,7 +66,8 @@
 .home-text-akc .home-text {
   color: #fff;
 }
-.home-btn-top {
+#home-btn-top {
+  cursor: pointer;
   margin-top: 11px;
   width: 26px;
   height: 26px;
@@ -78,7 +79,7 @@
   align-items: center;
   transition: all 0.3s;
 }
-.home-btn-top:hover {
+#home-btn-top:hover {
   scale: 1.1;
 }
 

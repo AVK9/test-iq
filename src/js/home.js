@@ -14,7 +14,7 @@ export const homePage = `
     >
   </p>
 
-  <div class="home-btn-top">
+  <div id="home-btn-top">
     <img src="${arrov}" alt="arrov" />
   </div>
   <div id="del-home-btn-more">
