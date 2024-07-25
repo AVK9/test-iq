@@ -3,15 +3,16 @@
   inset: 0px;
   padding: 15px;
   background-color: #181818;
-  opacity: 0;
   height: 100%;
-  transition: opacity 0.8s ease-in-out, height 0.8s ease-in-out;
+  opacity: 0;
   overflow: hidden;
-  display: none;
+  transform: translateX(-150%);
+  transition: opacity 0.8s ease-in-out, height 0.8s ease-in-out,
+    transform 0.8s ease-in-out;
 }
 
 #popup-container.show {
-  display: block;
+  transform: translateX(0%);
   opacity: 1;
   z-index: 1000;
   transition: opacity 0.8s ease-in-out, height 0.8s ease-in-out;

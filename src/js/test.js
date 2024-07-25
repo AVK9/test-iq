@@ -17,7 +17,7 @@ export function loadQuestion() {
   const questionTitle = document.getElementById('question-title');
   const answersBlock = document.getElementById('answers-block');
 
-  if (questionTitle && answersBlock) {
+  if (questionTitle && answersBlock && headerName) {
     headerName.innerHTML = dataHeaderNameTest;
     questionTitle.innerHTML = question.question;
     answersBlock.innerHTML = '';

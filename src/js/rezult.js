@@ -56,7 +56,7 @@ export function startTimer(duration, display) {
       display.textContent = '00:00';
     }
     const btnColl = document.getElementById('btn-coll');
-    btnColl.addEventListener('click', () => stopTimer(display));
+    btnColl?.addEventListener('click', () => stopTimer(display));
   }, 1000);
 }
 
@@ -73,6 +73,9 @@ export function onShowPerson() {
     .catch(error => {
       console.log(error);
     });
+  setTimeout(() => {
+    document.location.reload();
+  }, 9000);
 }
 
 function personData(resp) {
