@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'PT Serif';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/PTSerifRegular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/PTSerifBold.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Yeseva One';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/YesevaOne-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/MerriweatherBold.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/RobotoRegular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-style: normal;
+  src: url('../fonts/RobotoBlack.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/RobotoLight.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/RobotoMedium.ttf') format('truetype');
+  font-display: swap;
+}
