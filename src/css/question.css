@@ -39,6 +39,7 @@
   min-height: 50px;
   cursor: pointer;
   background-color: rgba(242, 243, 243, 0.15);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
   transition: background-color 0.3s;
 }
 .answer-label:hover {
@@ -116,7 +117,7 @@ input[type='radio'] {
   width: 367px;
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
   flex-wrap: wrap;
   gap: 21px 24px;
 }
